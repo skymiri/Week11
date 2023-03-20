@@ -25,3 +25,28 @@ function multiply(a, b = 1) {
 
 console.log(multiply(5, 2));
 // expect 10
+
+let radius = prompt("Put radius in cm : ");
+
+const radiusPara = document.querySelector("#radius");
+radiusPara.textContent += radius;
+
+const areaPara = document.querySelector("#result");
+console.log(areaPara);
+
+function calculateArea(radius) {
+  //references to p tags
+  if (isNaN(radius)) {
+    // alert("This is not a valid radius");
+    // update the  resultPara to show the area
+    areaPara.textContent = "This is Not a number";
+  } else {
+    const area = Math.PI * radius * radius;
+    return area;
+  }
+}
+let area = calculateArea(radius);
+if (area) {
+  //update the radiusPara
+  areaPara.textContent = `The area of a circle wth radius ${radius} is ${area}`;
+}
