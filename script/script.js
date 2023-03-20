@@ -1,29 +1,29 @@
-//function declaration
-function greet(time, name) {
-  console.log(`Good ${time} ${name}`);
-}
-//function calling
-greet("Night", "Nida");
+// //function declaration
+// function greet(time, name) {
+//   console.log(`Good ${time} ${name}`);
+// }
+// //function calling
+// greet("Night", "Nida");
 
-// function expression
-const greet1 = function (name) {
-  console.log(`hello ${name}`);
-};
+// // function expression
+// const greet1 = function (name) {
+//   console.log(`hello ${name}`);
+// };
 
-greet1("Nida");
+// greet1("Nida");
 
-// arrow function
-let greet2 = (name) => {
-  console.log(`hello ${name}`);
-};
+// // arrow function
+// let greet2 = (name) => {
+//   console.log(`hello ${name}`);
+// };
 
-greet2("Nida");
+// greet2("Nida");
 
-function multiply(a, b = 1) {
-  return a + b;
-}
+// function multiply(a, b = 1) {
+//   return a + b;
+// }
 
-console.log(multiply(5, 2));
+// console.log(multiply(5, 2));
 // expect 10
 
 // let radius = prompt("Put radius in cm : ");
@@ -68,3 +68,13 @@ function populateList(myShoppingList) {
 }
 let myShoppingList = ["bread", "cheese", "Greenpepper"];
 populateList(myShoppingList);
+
+function squareList() {
+  //get access to the ul element
+  //remove the ul element
+  const squareList = document.querySelector("ul.shopping List");
+  //remove the ul element class
+  ulElement.classList.remove("circleList");
+  //add the squareList class
+  ulElement.classList.add("squareList");
+}
